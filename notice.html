@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LOUNGE</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="notice.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="header"></div>
+        <div id="backtitle">
+            <div class="overlay"></div>
+            <div class="content">
+                <h1>NOTICE</h1>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="search-container">
+                <select>
+                    <option value="전체">전체</option>
+                </select>
+                <input type="text" placeholder="검색어를 입력하세요" />
+                <button>검색</button>
+            </div>
+            <div class="tab-container">
+                <div class="tab">전체</div>
+                <div class="tab">NOTICE</div>
+                <div class="tab">PROGRAM</div>
+                <div class="tab">EVENT</div>
+                <div class="tab">PRESS</div>
+                <div class="tab">REGRAM</div>
+            </div>
+            <table class="notice-table">
+                <thead>
+                    <tr>
+                        <th>제목</th>
+                        <th>등록일</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>[EVENT] B the B x chi EVENT🎁</td>
+                        <td>2024.04.30</td>
+                    </tr>
+                    <tr>
+                        <td>[EVENT] B the B x CHIC HOLIQUE EVENT🎁</td>
+                        <td>2024.04.15</td>
+                    </tr>
+                    <tr>
+                        <td>[EVENT] B the B x gesgep EVENT🎁</td>
+                        <td>2024.04.04</td>
+                    </tr>
+                    <tr>
+                        <td>[NOTICE] 비더비 단독 기획전 'B the B Select'</td>
+                        <td>2024.03.14</td>
+                    </tr>
+                    <tr>
+                        <td>[NOTICE] 클라뷰 × 비더비 기획전 'BOOSTING UP IN SEOUL'</td>
+                        <td>2024.03.14</td>
+                    </tr>
+                    <tr>
+                        <td>[NOTICE] 리슬스 × 비더비 기획전 《Wellness in SEOUL》</td>
+                        <td>2024.01.18</td>
+                    </tr>
+                    <tr>
+                        <td>[NOTICE] 예술송 × 비더비 기획전 《와유소유(臥遊逍遙): Singularity》</td>
+                        <td>2024.01.18</td>
+                    </tr>
+                    <tr>
+                        <td>[PRESS][데일리경제] 엘팩토리, 2023 비더비 전시 ‘VR 공간적 사유’ 이색 콘텐츠 선보여</td>
+                        <td>2023.10.11</td>
+                    </tr>
+                    <tr>
+                        <td>[NOTICE] 김종상가 비더비 기획전 《사물의 가정》</td>
+                        <td>2023.10.10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="footer"></div>
+        <script>
+            $(document).ready(function () {
+                $("#header").load("header.html");
+                $("#footer").load("footer.html");
+            });
+        </script>
+    </body>
+</html>

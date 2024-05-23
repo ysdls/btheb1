@@ -1,0 +1,90 @@
+#backtitle {
+    position: relative;
+    background: url('media-cube.jpg') no-repeat center -345px/cover;
+    background-attachment: fixed;
+    margin-top: 120px;
+}
+
+.main {
+    position: relative;
+    padding: 20px;
+    padding-top: 60px;
+    padding-bottom: 120px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.search-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+.search-container select,
+.search-container input,
+.search-container button {
+    margin: 0 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-container button {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.tab-container {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab {
+    margin: 0 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+}
+
+.tab:hover {
+    font-weight: bold;
+}
+
+.notice-table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+.notice-table thead {
+    background-color: #f1f1f1;
+}
+
+.notice-table th,
+.notice-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.notice-table th {
+    font-size: 18px;
+}
+
+.notice-table td {
+    font-size: 16px;
+}
+
+.notice-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}

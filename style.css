@@ -1,0 +1,448 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+h1, p, a {
+    margin :0;
+}
+header {
+    background-color: #000;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.hamburger {
+    display: none;  /* Ensure it's not displayed by default, only on mobile */
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white; /* Ensures the hamburger icon is visible on a dark background */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.navbar > ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.navbar > ul li {
+    margin: 0 15px;
+}
+
+.navbar > ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.logo {
+    background: url(btb-a-2.svg) no-repeat center center;
+    width: 100px;
+    height: 100px;
+}
+
+@media (max-width: 1024px) {
+    .hamburger {
+        display: block; /* Show hamburger icon on mobile */
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        position: absolute;
+        background-color: #000;
+        top: 120px; /* Adjusted to the height of your header */
+        width: 100%;
+        left: -100%;
+        transition: left 0.3s;
+        padding: 20px 0;
+    }
+
+    .nav-menu.open {
+        left: 0;
+    }
+
+    .navbar > ul li {
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+#has-submenu {
+    position: relative;
+}
+
+#has-submenu  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    color:black;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 160px;
+}
+
+#has-submenu  .submenu li {
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    margin:0px;
+}
+
+#has-submenu  .submenu li:hover {
+    background-color: black;
+}
+
+#has-submenu .submenu a {
+    padding: 10px 15px;
+    color:black;
+}
+#has-submenu .submenu a:hover {
+    color:white;
+}
+
+#has-submenu:hover .submenu,
+#has-submenu:focus-within .submenu {
+    display: block;
+}
+
+/* Mobile Styles */
+@media (max-width: 1024px) {
+    #has-submenu .submenu {
+        position: relative;
+    }
+}
+
+
+.video-background {
+    position: relative;
+    height: 80vh;
+    margin-top: 120px; /* Adjust based on the header height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: white;
+
+}
+
+#video-background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+.video-background-text {
+    background: rgb(0 0 0 / 55%);
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:40px;
+}
+.video-background-text h1 {
+    font-size: 3rem;
+}
+.video-background-text p {
+    font-size: 1.3rem;
+    margin: 0 auto;
+    width: 800px;
+    font-weight: bold;
+    line-height: 2;
+}
+.video-background-text button {
+    background: white;
+    color: black;
+    padding: 10px;
+    border: 0px;
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+
+.video-background-text button:hover {
+    background: gray;
+    cursor: pointer;
+}
+
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    animation: scroll 60s linear infinite;
+}
+
+.carousel img {
+    width: 10%; /* Assuming you have 10 images */
+    height: auto;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+.content h1 {
+    font-size:3rem;
+}
+
+
+.content p {
+    line-height: 2;
+}
+.content button {
+    width: 30%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+.content button:hover {
+    background: white;
+    color: black;
+}
+
+#section {
+    position: relative;
+    background: url('2403_1.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+
+
+.container {
+    display: flex;
+    height: calc(100vh - 200px);
+    overflow: hidden;
+}
+
+.column {
+    flex: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 20px;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+}
+
+.brand {
+    background-image: url('2403_4.jpg');
+}
+
+.tech {
+    background-image: url('2308n_2.jpg');
+}
+
+.comm {
+    background-image: url('2403_5.jpeg');
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    transition: background 0.5s ease-in-out;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.column:hover .overlay {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.column:hover {
+    transform: scale(1.1);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 2000;
+    text-align: center;
+    max-width: 90%;
+    width: 500px;
+}
+
+.popup-content {
+    position: relative;
+}
+
+.popup img {
+    width: 100%;
+    height: auto;
+}
+.popup-text {
+    text-align: left;
+    padding-left: 20px;
+    margin: 20px 0px;
+}
+
+.popup-text p:first-child {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size:1.2rem;
+}
+.popup-text p:nth-child(3) {
+    padding-top:5px;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.popup-buttons button {
+    width: 100%;
+    border-radius: 0;
+    cursor: pointer;
+    border: none;
+    padding: 20px;
+    background-color: black;
+    color: white;
+
+}
+.popup-buttons .today {
+    text-align: left;
+}
+.popup .close {
+    text-align: right;
+}
+
+.popup button:hover {
+    font-weight: bold;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 20px;
+    text-align: left;
+    color:white;
+}
+
+.visit-us {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section div {
+    padding-top: 20px;
+    line-height: 1.5;
+}
+
+
+.footer-section .button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.footer-section  .button:hover {
+    background-color: #929292;
+}
+
+
+.social-links {
+    display: flex;
+    justify-content: right;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    margin-right: 10px;
+}
+
+.social-links a:last-child {
+    margin-right: 0;
+}
+
+.social-links a:hover {
+    color: #929292;
+}

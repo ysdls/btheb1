@@ -1,0 +1,28 @@
+<header>
+    <nav class="navbar">
+        <a href="/" class="logo"></a>
+        <button class="hamburger" aria-label="Open menu">☰</button>
+
+        <ul class="nav-menu">
+            <li><a href="/lounge.html">LOUNGE</a></li>
+            <li><a href="/brands.html">BRANDS</a></li>
+            <li><a href="/notice.html">NOTICE</a></li>
+            <li><a href="/location.html">LOCATION</a></li>
+            <li id="has-submenu">
+                <a href="#">ABOUT US</a>
+                <ul class="submenu">
+                    <li><a href="/about-us.html">B the B</a></li>
+                    <li><a href="/sba.html">SBA</a></li>
+                </ul>
+            </li>
+            <li>KO | EN</li>
+        </ul>
+    </nav>
+</header>
+<script>
+    //햄버거
+    document.querySelector(".hamburger").addEventListener("click", function () {
+        const navMenu = document.querySelector(".nav-menu");
+        navMenu.classList.toggle("open");
+    });
+</script>

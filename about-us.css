@@ -1,0 +1,62 @@
+.video-background-about {
+    position: relative;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#backtitle {
+    position: relative;
+    background: url('media-cube.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    margin-top: 120px;
+}
+
+.main {
+    position: relative;
+    margin-top:120px
+}
+.text-box  {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    gap:60px
+}
+.text-box .title {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.text-box .desc p {
+    line-height: 2;
+}
+
+.text-box img {
+    width: 200px;
+    margin:0 auto;
+}
+
+#about1 {
+    position: relative;
+    background: url('architecture.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+#about2 {
+    position: relative;
+    background: url('kamila-2.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+#about3 {
+    position: relative;
+    background: url('leaf.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+.section .content {
+    height: 500px;
+}

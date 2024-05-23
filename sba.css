@@ -1,0 +1,33 @@
+.main {
+    position: relative;
+    margin-top:120px
+}
+.text-box  {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    gap:60px
+}
+.text-box .title {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.text-box .desc p {
+    line-height: 2;
+}
+
+.text-box img {
+    width: 1000px;
+    margin:0 auto;
+}
+.text-box .link a{
+    text-decoration: none;
+    padding: 20px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+}
