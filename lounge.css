@@ -37,6 +37,11 @@
     color: black;
     padding: 0px 10px;
 }
+.title .active {
+    background: black;
+    color: white;
+    border-radius: 50px;
+}
 .title a:hover {
     text-decoration: underline;
 }
