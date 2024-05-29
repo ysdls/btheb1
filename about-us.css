@@ -12,12 +12,12 @@
     position: relative;
     background: url('media-cube.jpg') no-repeat center center/cover;
     background-attachment: fixed;
-    margin-top: 120px;
+    margin-top: 80px;
 }
 
 .main {
     position: relative;
-    margin-top:120px
+    margin-top:80px
 }
 .text-box  {
     display: flex;

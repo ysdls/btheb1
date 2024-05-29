@@ -2,14 +2,14 @@
     position: relative;
     background: url('media-cube.jpg') no-repeat center -345px/cover;
     background-attachment: fixed;
-    margin-top: 120px;
+    margin-top: 80px;
 }
 
 .main {
     position: relative;
     padding: 20px;
     padding-top: 60px;
-    padding-bottom: 120px;
+    padding-bottom: 80px;
     width: 80%;
     margin: 0 auto;
 }
@@ -29,11 +29,14 @@
     text-decoration: underline;
 }
 
+
 .brands-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 20px;
-    gap:20px;
+    gap: 10px;
+    width: 100%;
 }
 
 .brand-wrapper {
@@ -41,35 +44,51 @@
     border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
-    width: 100%;
-    max-width: 1000px;
+    width: calc(25% - 11px);
+    box-sizing: border-box;
 }
 
 .brand-box {
     display: flex;
-    align-items: end;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     background-color: #fff;
     position: relative;
+    overflow: hidden;
 }
-.brands {
+
+.overlay {
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.3s ease, opacity 0.3s ease;
     z-index: 1;
-    left: 10px;
-    bottom: 10px;
 }
+
+.brand-box:hover .overlay {
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 1;
+}
+
+.brands {
+    width: 100%;
+}
+
 .brands img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    border: 2px solid black;
+    width: 100%;
+    height: 60px;
+    object-fit: cover;
 }
 
 .banner {
-    height: 200px;
     position: relative;
     width: 100%;
     overflow: hidden;
+    height: 300px; /* 고정된 높이 설정 */
 }
 
 .banner img {
@@ -77,23 +96,35 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .shop-info {
+    width: 80%;
     position: absolute;
-    right: 10px;
-    bottom: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
+.brand-box:hover .shop-info {
+    opacity: 1;
+    transform: translate(-50%, -30%);
+}
 
 .shop-info p:first-child {
-    font-size:1.5rem;
-    color:white;
+    font-size: 1.5rem;
+    color: white;
     font-weight: bold;
 }
+
 .shop-info p:nth-child(2) {
-    font-size:0.8rem;
-    color:white;
+    font-size: 0.8rem;
+    color: white;
     padding: 5px 0px;
 }
 
@@ -111,4 +142,3 @@
 .shop-info a:hover {
     background-color: gray;
 }
-
