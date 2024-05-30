@@ -1,6 +1,6 @@
 .video-background-about {
     position: relative;
-    height: 60vh;
+    aspect-ratio: auto 1920 / 1080;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,5 +58,8 @@
     background-attachment: fixed;
 }
 .section .content {
-    height: 500px;
+    height: 700px;
+}
+.section .content h1 {
+    text-transform: uppercase;
 }

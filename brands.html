@@ -7,6 +7,12 @@
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="brands.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <div id="header"></div>
@@ -15,29 +21,18 @@
             <div class="content">
                 <h1>BRANDS</h1>
                 <p>서울 뷰티패션 라운지 B the B 공간에서 만나실 수 있는 브랜드와 테크, 커뮤니케이션을 소개합니다.</p>
-                <!-- <p>
-                    We introduce Beauty, Beauty-Tech and Fashion brands that you can meet in B the B(Be the Beautiful)
-                    which is the Seoul Beauty Fashion Lounge at DDP.
-                </p> -->
             </div>
         </div>
-        <!-- <div class="video-background-fixed">
-            <video autoplay muted loop id="video-background-video-fixed">
-                <source src="2023.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-            <div class="overlay"></div>
-        </div> -->
         <div class="main">
             <div class="title">
-                <a href="#">전체</a>
-                <a href="#">브랜드</a>
-                <a href="#">테크</a>
-                <a href="#">커뮤니케이션</a>
+                <a href="#" class="tab-link active" id="all">전체</a>
+                <a href="#" class="tab-link" id="brand">브랜드라운지</a>
+                <a href="#" class="tab-link" id="tech">테크라운지</a>
+                <a href="#" class="tab-link" id="comm">커뮤니케이션라운지</a>
             </div>
             <hr />
             <div class="brands-container">
-                <div class="brand-wrapper">
+                <div class="brand-wrapper lounge all tech">
                     <div class="brand-box">
                         <div class="overlay"></div>
                         <div class="banner">
@@ -53,7 +48,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="brand-wrapper">
+                <div class="brand-wrapper lounge all tech">
                     <div class="brand-box">
                         <div class="overlay"></div>
                         <div class="banner">
@@ -69,7 +64,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="brand-wrapper">
+                <div class="brand-wrapper lounge all brand">
                     <div class="brand-box">
                         <div class="overlay"></div>
                         <div class="banner">
@@ -77,7 +72,7 @@
                             <div class="shop-info">
                                 <p>달바</p>
                                 <p>브랜드 홍보문구</p>
-                                <a href="https://dalba.co.kr/">바로가기</a>
+                                <a href="https://dalba.co.kr/" target="_blank">바로가기</a>
                             </div>
                         </div>
                         <div class="brands">
@@ -85,7 +80,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="brand-wrapper">
+                <div class="brand-wrapper lounge all tech comm">
                     <div class="brand-box">
                         <div class="overlay"></div>
                         <div class="banner">
@@ -93,7 +88,7 @@
                             <div class="shop-info">
                                 <p>디폰데</p>
                                 <p>브랜드 홍보문구</p>
-                                <a href="https://deeponde.com/">바로가기</a>
+                                <a href="https://deeponde.com/" target="_blank">바로가기</a>
                             </div>
                         </div>
                         <div class="brands">
@@ -101,7 +96,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="brand-wrapper">
+                <div class="brand-wrapper lounge all tech">
                     <div class="brand-box">
                         <div class="overlay"></div>
                         <div class="banner">
@@ -109,11 +104,123 @@
                             <div class="shop-info">
                                 <p>디센트</p>
                                 <p>브랜드 홍보문구</p>
-                                <a href="https://deepscent.shop/">바로가기</a>
+                                <a href="https://deepscent.shop/" target="_blank">바로가기</a>
                             </div>
                         </div>
                         <div class="brands">
                             <img src="banner/deepscent.png" alt="Zombie Logo" />
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-wrapper lounge all comm">
+                    <div class="brand-box">
+                        <div class="overlay"></div>
+                        <div class="banner">
+                            <img src="666.png" alt="Banner Image" />
+                            <div class="shop-info">
+                                <p>띰</p>
+                                <p>브랜드 홍보문구</p>
+                                <a href="https://thimbeauty.com/" target="_blank">바로가기</a>
+                            </div>
+                        </div>
+                        <div class="brands">
+                            <img src="banner/thim.png" alt="Zombie Logo" />
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-wrapper lounge all tech">
+                    <div class="brand-box">
+                        <div class="overlay"></div>
+                        <div class="banner">
+                            <img src="777.png" alt="Banner Image" />
+                            <div class="shop-info">
+                                <p>라곰</p>
+                                <p>브랜드 홍보문구</p>
+                                <a href="https://www.lagom.kr/" target="_blank">바로가기</a>
+                            </div>
+                        </div>
+                        <div class="brands">
+                            <img src="banner/lagom.png" alt="Zombie Logo" />
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-wrapper lounge all comm">
+                    <div class="brand-box">
+                        <div class="overlay"></div>
+                        <div class="banner">
+                            <img src="888.png" alt="Banner Image" />
+                            <div class="shop-info">
+                                <p>라비오라</p>
+                                <p>브랜드 홍보문구</p>
+                                <a href="https://www.labiora.co.kr/index.html" target="_blank">바로가기</a>
+                            </div>
+                        </div>
+                        <div class="brands">
+                            <img src="banner/labiora.png" alt="Zombie Logo" />
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-wrapper lounge all comm">
+                    <div class="brand-box">
+                        <div class="overlay"></div>
+                        <div class="banner">
+                            <img src="999.png" alt="Banner Image" />
+                            <div class="shop-info">
+                                <p>라피타</p>
+                                <p>브랜드 홍보문구</p>
+                                <a href="https://brand.naver.com/lapitta" target="_blank">바로가기</a>
+                            </div>
+                        </div>
+                        <div class="brands">
+                            <img src="banner/lapitta.png" alt="Zombie Logo" />
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-wrapper lounge all tech">
+                    <div class="brand-box">
+                        <div class="overlay"></div>
+                        <div class="banner">
+                            <img src="1000.png" alt="Banner Image" />
+                            <div class="shop-info">
+                                <p>룰루랩</p>
+                                <p>브랜드 홍보문구</p>
+                                <a href="https://lulu-lab.com/" target="_blank">바로가기</a>
+                            </div>
+                        </div>
+                        <div class="brands">
+                            <img src="banner/lululap.png" alt="Zombie Logo" />
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-wrapper lounge all comm">
+                    <div class="brand-box">
+                        <div class="overlay"></div>
+                        <div class="banner">
+                            <img src="1010.png" alt="Banner Image" />
+                            <div class="shop-info">
+                                <p>메노킨</p>
+                                <p>브랜드 홍보문구</p>
+                                <a href="https://www.menokin.co.kr/" target="_blank">바로가기</a>
+                            </div>
+                        </div>
+                        <div class="brands">
+                            <img src="banner/menokin_n.png" alt="Zombie Logo" />
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-wrapper lounge all tech">
+                    <div class="brand-box">
+                        <div class="overlay"></div>
+                        <div class="banner">
+                            <img src="1020.png" alt="Banner Image" />
+                            <div class="shop-info">
+                                <p>무아시</p>
+                                <p>브랜드 홍보문구</p>
+                                <a href="https://mooasi.com/" target="_blank">바로가기</a>
+                            </div>
+                        </div>
+                        <div class="brands">
+                            <img src="banner/mooasi.png" alt="Zombie Logo" />
                         </div>
                     </div>
                 </div>
@@ -124,6 +231,33 @@
             $(document).ready(function () {
                 $("#header").load("header.html");
                 $("#footer").load("footer.html");
+            });
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const tabs = document.querySelectorAll(".tab-link");
+                const lounges = document.querySelectorAll(".lounge");
+
+                tabs.forEach((tab) => {
+                    tab.addEventListener("click", function (e) {
+                        e.preventDefault(); // 링크 기본 동작 방지
+                        tabs.forEach((t) => t.classList.remove("active")); // 모든 탭에서 'active' 클래스 제거
+                        this.classList.add("active"); // 클릭된 탭에 'active' 클래스 추가
+
+                        const loungeType = this.id; // 클릭된 탭의 id
+                        lounges.forEach((lounge) => {
+                            if (loungeType === "all") {
+                                lounge.style.display = ""; // 모든 라운지 보이기
+                            } else {
+                                if (lounge.classList.contains(loungeType)) {
+                                    lounge.style.display = ""; // 해당 라운지만 보이기
+                                } else {
+                                    lounge.style.display = "none"; // 나머지는 숨기기
+                                }
+                            }
+                        });
+                    });
+                });
             });
         </script>
     </body>

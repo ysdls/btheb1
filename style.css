@@ -4,6 +4,8 @@ body, html {
     padding: 0;
     font-family: Arial, sans-serif;
     box-sizing: border-box;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 500;
 }
 h1, p, a {
     margin :0;
@@ -234,7 +236,7 @@ header {
     gap: 40px;
 }
 .content h1 {
-    font-size:3rem;
+    font-size:2rem;
 }
 
 

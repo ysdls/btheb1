@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LOUNGE</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="notice.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div id="header"></div>
+        <div id="backtitle">
+            <div class="overlay"></div>
+            <div class="content">
+                <h1>NOTICE</h1>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="tab-container">
+                <p>[데일리경제] 엘팩토리, 2023 비더비 전시 ‘VR 공간적 사유’ 이색 콘텐츠 선보여</p>
+            </div>
+            <div class="notice-box">
+                <img src="pppp.png" alt="" />
+                <div>
+                    <a href="http://www.kdpress.co.kr/news/articleView.html?idxno=123000" target="_blank"
+                        >[기사전문 바로가기]</a
+                    >
+                </div>
+            </div>
+            <div class="notice-back">
+                <a href="notice.html">목록으로</a>
+            </div>
+        </div>
+        <div id="footer"></div>
+        <script>
+            $(document).ready(function () {
+                $("#header").load("header.html");
+                $("#footer").load("footer.html");
+            });
+        </script>
+    </body>
+</html>
