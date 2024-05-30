@@ -260,7 +260,7 @@ header {
 
 #section {
     position: relative;
-    background: url('2403_1.jpg') no-repeat center center/cover;
+    background: url('2405_1.jpg') no-repeat center center/cover;
     background-attachment: fixed;
 }
 
@@ -289,15 +289,15 @@ header {
 }
 
 .brand {
-    background-image: url('2403_4.jpg');
+    background-image: url('brand/2405_2_re.jpg');
 }
 
 .tech {
-    background-image: url('2308n_2.jpg');
+    background-image: url('tech/2308n_1.jpg');
 }
 
 .comm {
-    background-image: url('2403_5.jpeg');
+    background-image: url('comm/2403_1.jpg');
 }
 .overlay {
     position: absolute;
